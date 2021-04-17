@@ -18,6 +18,7 @@ def home():
             form.salary.data,
             upper_tax_threshold=upper_tax_threshold,
             tax_free=tax_free)
+        print(pay_data)
         form = EmployeeSalaryForm()
         return render_template('index.html', form=form, pay=pay_data)
 
