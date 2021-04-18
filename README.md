@@ -12,6 +12,9 @@ national insurance contributions and take home pay of the employee are calculate
 | ------------------------------------------------------- | ------------------------------------------------ |
 | <img src="/readme_images/starting_calc.PNG">             |<img src="/readme_images/calc_result.PNG">       |
 
+## Assumptions:
+* The calculator uses simplified tax bands and assumes that there will be no change in the personal allowance or tax thresholds in the year after the calculation is performed (there are typically changes to the UK tax-free allowance and tax bands at the start of each tax year in April).
+* The calculator does not take into account other sources of employee income or taxable benefits, which could result in higher tax being charged than that shown by the calculator.
 
 ## Using the Application:
 The application has been deployed on Heroku and can be accessed here:  
@@ -20,13 +23,14 @@ The application has been deployed on Heroku and can be accessed here:
 ## Running the Unittests and Application Locally:
 1. Clone the repository:  
     >> git clone `https://github.com/AG-25/net-pay-calculator-web-app`
-1. Install Python version 3.8 or a later version. The most recent version of Python can be downloaded from: 
+1. Install Python 3.8 or a later version. The most recent version of Python can be downloaded from: 
      https://www.python.org/downloads/
 1. Install the Python modules listed in "requirements.txt" using pip:
    >> pip install requirements.txt
 1. Run the unittests by navigating to the project root and entering the following command in a terminal:  
    >> python -m unittest test_app.py
-1. To run the application locally, set a "SECRET_KEY"* environment variable to a random string and then enter the following command in a terminal to start a Flask test server:
+1. To run the application locally, set the "SECRET_KEY"* environment variable (this can be any string) and then enter "flask run" in a terminal to start a Flask test server:
+   >> export SECRET_KEY=key-that-cannot-be-guessed  
    >> flask run  
   
 *Note that the "SECRET_KEY" environment variable is used by Flask as a cryptographic key.
@@ -45,4 +49,3 @@ The application has been deployed on Heroku and can be accessed here:
 ## Supporting Libraries:
 * Flask (backend): https://flask.palletsprojects.com/en/1.1.x/quickstart/  
 * Bootstrap (frontend): https://getbootstrap.com/  
-
