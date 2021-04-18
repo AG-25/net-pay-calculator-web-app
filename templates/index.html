@@ -33,7 +33,7 @@
             {{ form.salary(class="form-control form-control-lg", placeholder="e.g. '25000'") }}
             {% if 'salary' in form.errors %}
             <small class="red-text">
-              Please enter a number, with no currency sign or symbols
+              Please check the number is positive and contains no currency sign or symbols
             </small>
             {% else %}
             <small>
@@ -56,7 +56,7 @@
               </th>
             </tr>
             <tr>
-              <th class="row-heading">Salary:</th>
+              <th class="row-heading">Annual Salary:</th>
               <td>
                 {% if pay %}
                 £{{ pay["salary"] }}
@@ -69,9 +69,9 @@
               <th class="row-heading">Income tax:</th>
               <td>
                 {% if pay %}
-                £{{ pay["tax_due"] }}
+                -£{{ pay["tax_due"] }}
                 {% else %}
-                <span class="example-text">£2000</span>
+                <span class="example-text">-£2000</span>
                 {% endif %}
               </td>
             </tr>
@@ -79,9 +79,9 @@
               <th class="row-heading">National insurance:</th>
               <td>
                 {% if pay %}
-                £{{ pay["ni_due"] }}
+                -£{{ pay["ni_due"] }}
                 {% else %}
-                <span class="example-text">£1200</span>
+                <span class="example-text">-£1200</span>
                 {% endif %}
               </td>
             </tr>
