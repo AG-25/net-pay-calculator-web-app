@@ -5,11 +5,10 @@ A single page Python (Flask) web application that takes a UK annual salary as in
 1. A user browses to the website and the homepage is rendered with a calculator, which contains a web form for the user to input an annual salary.
 1. When the user submits the web form with a valid salary input (positive number with no symbols), the annual tax payments, 
 national insurance contributions and take home pay of the employee are calculated on the server side.
-1. The homepage is rendered again with the results of the calculation included below 
-the input element.
+1. The homepage is rendered again with the results of the calculation included below the web form.
 <br>
 
-|                   Starting calculator:                  |     Calculator after user submission (55000):    |
+|                   Starting calculator:                  |     Calculator after user submission (£55000):   |
 | ------------------------------------------------------- | ------------------------------------------------ |
 | <img src="/readme_images/starting_calc.PNG">             |<img src="/readme_images/calc_result.PNG">       |
 
@@ -21,7 +20,7 @@ The application has been deployed on Heroku and can be accessed here:
 ## Running the Unittests and Application Locally:
 1. Clone the repository:  
     >> git clone `https://github.com/AG-25/net-pay-calculator-web-app`
-1. Make sure Python version 3.8 or later is installed. The most recent version of Python can be downloaded from: 
+1. Install Python version 3.8 or a later version. The most recent version of Python can be downloaded from: 
      https://www.python.org/downloads/
 1. Install the Python modules listed in "requirements.txt" using pip:
    >> pip install requirements.txt
