@@ -113,6 +113,10 @@ footer p {
     .dark-section {
     padding: 60px 37.5%;
     }
+
+    .white-section {
+    padding: 75px 15%;
+    }
 }
 
 @media (min-width: 2000px) {
@@ -156,14 +160,12 @@ footer p {
 @media (max-width: 500px) {
     .dark-section {
     padding: 30px 10%;
-    font-size: 1rem;
     }
 }
 
 @media (max-width: 320px) {
     .dark-section {
     padding: 30px 5%;
-    font-size: 1rem;
     }
 
     th, td {
