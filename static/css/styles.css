@@ -107,3 +107,64 @@ footer {
     border: 2px solid #000;
     margin: 20px;
 }
+
+/***** Media queries for different viewport sizes *****/
+@media (min-width: 1300px) {
+    .dark-section {
+    padding: 60px 35%;
+    }
+
+}
+
+@media (min-width: 1800px) {
+    .dark-section {
+    padding: 60px 40%;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .dark-section {
+    padding: 30px 20%;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+    text-align: center;
+    }
+
+    .dark-section {
+    padding: 30px 15%;
+    }
+
+    h1, h2 {
+    font-size: 3rem;
+    }
+
+    .results {
+    margin: 20px 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .dark-section {
+    padding: 30px 20%;
+    font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .dark-section {
+    padding: 30px 10%;
+    font-size: 1rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .dark-section {
+    padding: 30px 5%;
+    font-size: 1rem;
+    }
+}
