@@ -37,7 +37,7 @@ The application has been deployed on Heroku and can be accessed here:
 * tests.py - Unittests for the calculator function in src/calculator.py.
 * requirements.txt - A list of Python modules that are needed to run the application.
 * Procfile - A file that defines the web server for Heroku to run the application.
-* src/calculator.py - Additional Python source code, which contains the calculator function that takes salary as an input and returns net pay.
+* src/calculator.py - Additional Python source code, which includes the calculator function that takes salary as an input and returns net pay.
 * src/forms.py - Includes a definition of the flask-wtf form that is used in the application to take user input.
 * templates/index.html - HTML template for the webpage.
 * static/css/styles.css - Custom css styles for index.html.
@@ -46,3 +46,4 @@ The application has been deployed on Heroku and can be accessed here:
 ## Supporting Libraries:
 * Flask (backend): https://flask.palletsprojects.com/en/1.1.x/quickstart/  
 * Bootstrap (frontend): https://getbootstrap.com/  
+

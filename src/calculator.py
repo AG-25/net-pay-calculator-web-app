@@ -4,6 +4,7 @@ def calc_net_pay(salary, tax_free=15000, upper_tax_threshold=50000):
 
     tax_due = 0
     nat_insurance_due = 0
+
     if salary > upper_tax_threshold:
         tax_due += (salary - upper_tax_threshold) * 0.4
         tax_due += (upper_tax_threshold - tax_free) * 0.2
