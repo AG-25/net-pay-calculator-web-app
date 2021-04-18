@@ -3,7 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-  <title>Net Pay Calculator</title>
+  <title>UK Net Pay Calculator</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <!-- Custom CSS Styles -->
@@ -17,11 +17,11 @@
 <body>
   <div>
     <div class="white-section">
-      <h1 class="text-center">UK Take Home Pay Calculator <span class="tax-year"></span></h1>
+      <h1 class="text-center">UK Net Pay Calculator <span class="tax-year"></span></h1>
       <p>
           Enter an employees salary to estimate their annual income tax payments,
-          national insurance contributions and take-home income over the current
-          UK tax year.
+          national insurance contributions and take-home income (net pay) over the
+          current UK tax year.
       </p>
     </div>
     <div class="dark-section text-center">
@@ -89,9 +89,9 @@
               <th class="row-heading">Net pay:</th>
               <td>
                 {% if pay %}
-                <span class="underline">£{{ pay["net_pay"] }}</span>
+                <span class="underline bold">£{{ pay["net_pay"] }}</span>
                 {% else %}
-                  <span class="example-text underline">£21800</span>
+                  <span class="example-text underline bold">£21800</span>
                 {% endif %}
               </td>
             </tr>
