@@ -126,7 +126,6 @@ footer p {
 }
 
 @media (max-width: 1000px) {
-
     .dark-section {
     padding: 30px 20%;
     }
@@ -139,6 +138,7 @@ footer p {
 
     .dark-section {
     padding: 30px 15%;
+    font-size: 1rem;
     }
 
     h1, h2 {
@@ -147,13 +147,6 @@ footer p {
 
     .results {
     margin: 20px 0;
-    }
-}
-
-@media (max-width: 650px) {
-    .dark-section {
-    padding: 30px 20%;
-    font-size: 1rem;
     }
 }
 

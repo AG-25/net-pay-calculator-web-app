@@ -63,9 +63,9 @@
               <th class="row-heading">Income tax:</th>
               <td>
                 {% if pay %}
-                -£{{ "{:.2f}".format(pay["tax_due"]) }}
+                £{{ "{:.2f}".format(pay["tax_due"]) }}
                 {% else %}
-                <span class="example-text">-£2000.00</span>
+                <span class="example-text">£2000.00</span>
                 {% endif %}
               </td>
             </tr>
@@ -73,9 +73,9 @@
               <th class="row-heading">National insurance:</th>
               <td>
                 {% if pay %}
-                -£{{ "{:.2f}".format(pay["ni_due"]) }}
+                £{{ "{:.2f}".format(pay["ni_due"]) }}
                 {% else %}
-                <span class="example-text">-£1200.00</span>
+                <span class="example-text">£1200.00</span>
                 {% endif %}
               </td>
             </tr>
