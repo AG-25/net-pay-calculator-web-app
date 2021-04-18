@@ -59,9 +59,9 @@
               <th class="row-heading">Annual Salary:</th>
               <td>
                 {% if pay %}
-                £{{ pay["salary"] }}
+                £{{ "{:.2f}".format(pay["salary"]) }}
                 {% else %}
-                <span class="example-text">£25000</span>
+                <span class="example-text">£25000.00</span>
                 {% endif %}
               </td>
             </tr>
@@ -69,9 +69,9 @@
               <th class="row-heading">Income tax:</th>
               <td>
                 {% if pay %}
-                -£{{ pay["tax_due"] }}
+                -£{{ "{:.2f}".format(pay["tax_due"]) }}
                 {% else %}
-                <span class="example-text">-£2000</span>
+                <span class="example-text">-£2000.00</span>
                 {% endif %}
               </td>
             </tr>
@@ -79,9 +79,9 @@
               <th class="row-heading">National insurance:</th>
               <td>
                 {% if pay %}
-                -£{{ pay["ni_due"] }}
+                -£{{ "{:.2f}".format(pay["ni_due"]) }}
                 {% else %}
-                <span class="example-text">-£1200</span>
+                <span class="example-text">-£1200.00</span>
                 {% endif %}
               </td>
             </tr>
@@ -89,9 +89,9 @@
               <th class="row-heading">Net pay:</th>
               <td>
                 {% if pay %}
-                <span class="underline bold">£{{ pay["net_pay"] }}</span>
+                <span class="underline bold">£{{ "{:.2f}".format(pay["net_pay"]) }}</span>
                 {% else %}
-                  <span class="example-text underline bold">£21800</span>
+                  <span class="example-text underline bold">£21800.00</span>
                 {% endif %}
               </td>
             </tr>
