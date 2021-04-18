@@ -13,7 +13,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 small {
@@ -51,7 +51,7 @@ small {
 .white-section {
     background-color: #fff;
     padding: 75px 10%;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .dark-section {
@@ -63,7 +63,7 @@ small {
 footer {
     padding: 20px;
     background-color: #e0e0e0;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 /***** Text Decoration *****/
