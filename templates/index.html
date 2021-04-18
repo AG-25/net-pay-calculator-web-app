@@ -17,7 +17,7 @@
 <body>
   <div>
     <div class="white-section">
-      <h1 class="text-center">UK Take Home Pay Calculator</h1>
+      <h1 class="text-center">UK Take Home Pay Calculator <span class="tax-year"></span></h1>
       <p>
           Enter an employees salary to estimate their annual income tax payments,
           national insurance contributions and take-home income over the current
@@ -102,7 +102,8 @@
     <div class="white-section">
       <h2 class="underline text-center">How the calculator works:</h2>
       <p>The calculator uses the annual tax-free allowance and tax thresholds
-       for the current tax year to calculate take-home income*:
+       for the current tax year (<span class="tax-year"></span>) to calculate
+       take-home income*:
       </p>
       <p><span class="bold">Tax-free allowance:</span> £{{ tax_free }}</p>
       <p><span class="bold">Upper tax threshold:</span> £{{ tax_threshold }}</p>
